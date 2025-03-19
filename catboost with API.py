@@ -47,7 +47,6 @@ import streamlit as st
 import numpy as np
 from catboost import CatBoostClassifier
 
-
 import pandas as pd
 import numpy as np
 from catboost import CatBoostClassifier
