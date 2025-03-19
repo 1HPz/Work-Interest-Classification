@@ -35,8 +35,18 @@ print(df.head())  # ดู 5 แถวแรกของข้อมูล
 """# **Result from Model**"""
 
 # ✅ Import Libraries
-!pip install --upgrade numpy
-!pip install --upgrade catboost
+import subprocess
+import sys
+
+# ติดตั้ง dependencies ที่จำเป็น
+subprocess.check_call([sys.executable, "-m", "pip", "install", "numpy"])
+subprocess.check_call([sys.executable, "-m", "pip", "install", "catboost"])
+
+# โค้ดหลักของแอป Streamlit
+import streamlit as st
+import numpy as np
+from catboost import CatBoostClassifier
+
 
 import pandas as pd
 import numpy as np
